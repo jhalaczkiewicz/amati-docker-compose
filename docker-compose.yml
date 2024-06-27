@@ -13,7 +13,7 @@ services:
         # Tag or branch to build
         APP_TAG_OR_BRANCH: ${APP_TAG_OR_BRANCH:-main}
         # GIT repository to clone the app from
-        APP_REPO: ${APP_REPO:-https://github.com/jhalaczkiewicz/amati.git}
+        APP_REPO: ${APP_REPO:-https://${ACCESS_TOKEN_NAME}:${ACCESS_TOKEN_VALUE}@github.com/jhalaczkiewicz/amati.git}
         # Endpoint for the named entity recognition service.
         NER_ENDPOINT: http://ner:8001
         # Set to 'auto' if the app should be exposed under its full path (e.g. /exist/apps/tei-publisher)
